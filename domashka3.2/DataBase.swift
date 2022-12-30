@@ -58,10 +58,10 @@ class DataBase{
     
     func getTeacherIndexBy(name: String, surname: String, age: Int) -> Int {
         var indexToReturn: Int = -1
-        for (indx, std) in teachers.enumerated() {
-            if std.name == name &&
-                std.surname == surname &&
-                std.age == age {
+        for (indx, teach) in teachers.enumerated() {
+            if teach.name == name &&
+                teach.surname == surname &&
+                teach.age == age {
                 indexToReturn = indx
                 break
             }
