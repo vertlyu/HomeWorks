@@ -25,10 +25,10 @@ class Hospital {
     
     func getPatientIndexBy(name: String, surname: String, age: Int) -> Int {
         var indexToReturn: Int = -1
-        for (indx, std) in patients.enumerated() {
-            if std.name == name &&
-                std.surname == surname &&
-                std.age == age {
+        for (indx, ptt) in patients.enumerated() {
+            if ptt.name == name &&
+                ptt.surname == surname &&
+                ptt.age == age {
                 indexToReturn = indx
                 break
             }
